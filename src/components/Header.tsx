@@ -7,7 +7,7 @@ import { HiMenu } from "react-icons/hi";
 
 export default function Header() {
   return (
-    <div className=" flex justify-between items-center px-[20px] md:px-[60px] py-6 bg-indigo-50 w-full">
+    <div className=" flex justify-between items-center px-[20px] md:px-[60px] py-6 w-full absolute">
       <div>
         <Link href={"/"}>
           <Image src={logo} alt="panaverse-logo"></Image>
