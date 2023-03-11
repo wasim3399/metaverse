@@ -2,12 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import logo from "../../public/images/logo.webp";
+import { AiOutlineMail, AiOutlinePhone, IconName } from "react-icons/ai";
 
 export default function Footer() {
   return (
     <>
       <div className=" md:flex justify-between px-20 gap-20 bg-black py-10">
-        <div className=" md:w-1/4 md:py-10 py-20 py-5">
+        <div className=" md:w-1/4 md:py-10 py-5">
           <h2 className=" text-white font-semibold text-2xl border-l-8 border-blue-600 pl-2">
             About Us
           </h2>
@@ -21,7 +22,7 @@ export default function Footer() {
             Panaverse DAO is a movement to spread
           </p>
         </div>
-        <div className=" md:w-1/4 md:py-10 py-20 py-5">
+        <div className=" md:w-1/4 md:py-10 py-5">
           <h2 className=" text-white font-semibold text-2xl border-l-8 border-blue-600 pl-2">
             Useful Links
           </h2>
@@ -33,7 +34,7 @@ export default function Footer() {
           <Link href={"/"} className="hover:text-white"><li>Contact</li></Link>
           </ul>
         </div>
-        <div className=" md:w-1/4 md:py-10 py-20 py-5">
+        <div className=" md:w-1/4 md:py-10 py-5">
           <h2 className=" text-white font-semibold text-2xl border-l-8 border-blue-600 pl-2">
             Follow Us
           </h2>
@@ -45,13 +46,13 @@ export default function Footer() {
           <Link href={"/"} className="hover:text-white"><li>Youtube</li></Link>
           </ul>
         </div>
-        <div className=" md:w-1/4 md:py-10 py-20 py-5">
+        <div className=" md:w-1/4 md:py-10 py-5">
           <h2 className=" text-white font-semibold text-2xl border-l-8 border-blue-600 pl-2">
             Contact Us
           </h2>
           <ul className=" pt-10 text-gray-600">
-            <li>+92 123 4567890</li>
-            <li>wasim.iqtm@gmail.com</li>
+            <div className=" flex items-center"><AiOutlinePhone></AiOutlinePhone><li>+92 123 4567890</li></div>
+            <div className=" flex items-center"><AiOutlineMail></AiOutlineMail><li className=" pl-2">wasim.iqtm@gmail.com</li></div>
             <li>Lahore, Pakistan</li>
           </ul>
         </div>
