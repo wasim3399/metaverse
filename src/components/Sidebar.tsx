@@ -7,7 +7,7 @@ export default function Sidebar() {
     <aside className="h-screen sticky top-0 w-1/4 border border-gray-500 rounded-2xl">
       <div>
         <div className=" flex flex-col justify-between text-center space-y-6">
-          <div className="flex justify-around pt-4">
+          <div className="flex justify-around pt-4 items-center">
             <h2 className=" text-4xl">Wasim</h2>
             <h2>Sr. Software Engineer</h2>
           </div>
@@ -19,8 +19,8 @@ export default function Sidebar() {
             className="  mx-auto rounded-2xl cov"
           ></Image>
           <div className=" text-2xl">
-            <p>hello@drake.design</p>
-            <p>Base in Los Angeles, CA</p>
+            <p>wasim.iqtm@gmail.com</p>
+            <p>Base in Lahore, Pakistan</p>
           </div>
           <div className=" text-gray-400">
             <p>© 2022 Drake. All Rights Reserved</p>
