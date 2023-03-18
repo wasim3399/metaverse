@@ -1,7 +1,11 @@
+"use client";
 import Sidebar from "@/components/Sidebar";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
 import {
   AiFillHome,
   AiOutlineUsergroupAdd,
@@ -9,9 +13,23 @@ import {
   AiFillSliders,
   AiOutlinePhone,
   AiOutlineMail,
+  AiOutlineUser,
 } from "react-icons/ai";
 
 export default function profile() {
+  const [ref, inView] = useInView({ threshold: 0.1 });
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.5 },
+      });
+    }
+  }, [animation, inView]);
+
   return (
     <>
       <div className="flex  bg-zinc-800 text-white">
@@ -20,8 +38,9 @@ export default function profile() {
           {/* banner */}
           <div className=" flex">
             <div className="space-y-10">
-              <button className=" border border-gray-500 px-6 py-2 rounded-3xl">
-                INTRODUCTION
+              <button className=" flex border border-gray-500 px-6 py-2 rounded-3xl items-center">
+                <AiFillHome></AiFillHome>{" "}
+                <span className=" pl-4">INTRODUCTION</span>
               </button>
               <h2 className=" text-6xl">
                 Say Hi from <span className="text-green-500">Drake,</span>{" "}
@@ -35,7 +54,7 @@ export default function profile() {
             </div>
             <div className="flex flex-col justify-center space-y-4 border border-gray-500 rounded-3xl px-6">
               <AiFillHome></AiFillHome>
-              <AiOutlineUsergroupAdd></AiOutlineUsergroupAdd>
+              <AiOutlineUser></AiOutlineUser>
               <AiFillCodepenCircle></AiFillCodepenCircle>
               <AiFillSliders></AiFillSliders>
             </div>
@@ -47,7 +66,12 @@ export default function profile() {
           </div>
 
           {/* stats */}
-          <div className="flex py-36">
+          <motion.div
+            className="flex py-36"
+            ref={ref}
+            animate={animation}
+            initial={{ opacity: 0, y: 50 }}
+          >
             <div className=" p-10 space-y-5">
               <h2 className=" text-green-500 text-8xl">10+</h2>
               <p className=" text-gray-400">YEARS OF EXPERIENCE</p>
@@ -58,13 +82,20 @@ export default function profile() {
                 PROJECTS COMPLETED ON 15 COUNTRIES
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* about */}
-          <div className=" flex">
+          <motion.div
+            className=" flex"
+            ref={ref}
+            animate={animation}
+            initial={{ opacity: 0, y: 50 }}
+            id="about"
+          >
             <div className="space-y-10 w-3/4">
-              <button className=" border border-gray-500 px-6 py-2 rounded-3xl">
-                ABOUT
+              <button className=" flex border border-gray-500 px-6 py-2 rounded-3xl items-center">
+                <AiOutlineUser></AiOutlineUser>{" "}
+                <span className=" pl-4">ABOUT</span>
               </button>
               <h2 className=" text-4xl">
                 Every great design begin with an even{" "}
@@ -79,7 +110,7 @@ export default function profile() {
                 improving my chopsone design problem at a time.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* resume */}
           <div className=" flex pt-36">
@@ -333,8 +364,8 @@ export default function profile() {
                 Let's Work <span className="text-green-500">Together!</span>
               </h2>
               <h3 className=" text-2xl font-semibold dark:text-white">
-                    Contact Me
-                  </h3>
+                Contact Me
+              </h3>
               <ul className=" pt-10 text-gray-600">
                 <div className=" flex items-center hover:text-green-500">
                   <AiOutlinePhone></AiOutlinePhone>

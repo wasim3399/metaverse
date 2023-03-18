@@ -8,8 +8,8 @@ export default function Sidebar() {
       <div>
         <div className=" flex flex-col justify-between text-center space-y-6">
           <div className="flex justify-around pt-4 items-center">
-            <h2 className=" text-4xl">Zia</h2>
-            <h2>Sr. Designer</h2>
+            <h2 className=" text-4xl">WASIM</h2>
+            <h2 className=" text-green-500">Sr. Software Engineer</h2>
           </div>
           <Image
             src={"/images/wasim.jpg"}
