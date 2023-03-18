@@ -12,14 +12,14 @@ export default function Sidebar() {
             <h2>Sr. Designer</h2>
           </div>
           <Image
-            src={"/images/zia.webp"}
+            src={"/images/wasim.jpg"}
             alt="saylani"
             width={200}
             height={50}
             className="  mx-auto rounded-2xl cov"
           ></Image>
           <div className=" text-2xl">
-            <p>zia.iqtm@gmail.com</p>
+            <p>wasim.iqtm@gmail.com</p>
             <p>Based in Lahore, Pakistan</p>
           </div>
           <div className=" text-gray-400">
