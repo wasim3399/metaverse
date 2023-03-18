@@ -8,7 +8,6 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import {
   AiFillHome,
-  AiOutlineUsergroupAdd,
   AiFillCodepenCircle,
   AiFillSliders,
   AiOutlinePhone,
@@ -16,7 +15,7 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
-export default function profile() {
+export default function Profile() {
   const [ref, inView] = useInView({ threshold: 0.1 });
   const animation = useAnimation();
 
