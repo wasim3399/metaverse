@@ -37,18 +37,21 @@ export default function Profile() {
           {/* banner */}
           <div className=" flex">
             <div className="space-y-10">
-              <button className=" flex border border-gray-500 px-6 py-2 rounded-3xl items-center">
-                <AiFillHome></AiFillHome>{" "}
-                <span className=" pl-4">INTRODUCTION</span>
-              </button>
+              <Link href="/">
+                <button className=" flex border border-gray-500 px-6 py-2 rounded-3xl items-center">
+                  <AiFillHome></AiFillHome> <span className=" pl-4">HOME</span>
+                </button>
+              </Link>
               <h2 className=" text-6xl">
-                Say Hi from <span className="text-green-500">Drake,</span>{" "}
-                Framer Designer and Developer
+                Say Hi from <span className="text-green-500">Wasim,</span>{" "}
+                Technical Project Manager
               </h2>
-              <p className=" text-gray-400 w-1/2">
-                I design and code beautifully simple things and i love what i
-                do. Just simple like that! I design and code beautifully simple
-                things and i love what i do. Just simple like that!
+              <p className=" text-gray-400 w-3/4 text-justify">
+                I am presently employed as a Technical Project Lead/Team Lead,
+                with a career spanning over <span className=" text-white font-semibold">seven years</span>. My expertise lies in
+                PHP Frameworks such as <span className=" text-white font-semibold">Laravel and CodeIgniter</span>, and I have
+                additionally garnered two years of experience in the current
+                most in-demand front-end Framework, namely, <span className=" text-white font-semibold">Vue.js</span>.
               </p>
             </div>
             <div className="flex flex-col justify-center space-y-4 border border-gray-500 rounded-3xl px-6">
@@ -59,7 +62,7 @@ export default function Profile() {
             </div>
           </div>
           <div className=" pr-24">
-            <div className=" mt-8 w-[150px] h-[150px] border border-gray-500 rounded-full flex float-right  justify-center items-center">
+            <div className=" mt-8 w-[150px] h-[150px] border text-gray-400 rounded-full flex float-right  justify-center items-center">
               <p>My Projects</p>
             </div>
           </div>
@@ -72,13 +75,13 @@ export default function Profile() {
             initial={{ opacity: 0, y: 50 }}
           >
             <div className=" p-10 space-y-5">
-              <h2 className=" text-green-500 text-8xl">10+</h2>
+              <h2 className=" text-green-500 text-8xl">7+</h2>
               <p className=" text-gray-400">YEARS OF EXPERIENCE</p>
             </div>
             <div className=" p-10 space-y-5">
-              <h2 className=" text-green-500 text-8xl">182+</h2>
+              <h2 className=" text-green-500 text-8xl">15+</h2>
               <p className=" text-gray-400">
-                PROJECTS COMPLETED ON 15 COUNTRIES
+                PROJECTS COMPLETED ON 4 COUNTRIES
               </p>
             </div>
           </motion.div>
@@ -97,16 +100,15 @@ export default function Profile() {
                 <span className=" pl-4">ABOUT</span>
               </button>
               <h2 className=" text-4xl">
-                Every great design begin with an even{" "}
-                <span className="text-green-500">better story</span>
+                Every great idea begin with a{" "}
+                <span className="text-green-500">great thought</span>
               </h2>
-              <p className=" text-gray-400">
-                Since beginning my journey as a freelance designer nearly 8
-                years ago, I've done remote work for agencies, consulted for
-                startups, and collaborated with talented people to create
-                digital products for both business and consumer use. I'm quietly
-                confident, naturally curious, and perpetually working on
-                improving my chopsone design problem at a time.
+              <p className=" text-gray-400 text-justify">
+              I am always keen
+to learn new technologies in-demand and have recently expanded my skill set to include <span className=" text-white font-semibold">Next.js</span>.
+Furthermore, I am presently pursuing a certification in <span className=" text-white font-semibold">Metaverse & Blockchain</span>. I possess a comprehensive
+understanding of database technologies, including <span className=" text-white font-semibold">MySQL, SingleStore, and MongoDB</span>. Additionally, I am
+proficient in working with <span className=" text-white font-semibold">SOAP and Restful APIs</span> for both web and mobile applications
               </p>
             </div>
           </motion.div>
@@ -123,41 +125,50 @@ export default function Profile() {
               <ol className="relative border-l border-gray-200 dark:border-gray-700">
                 <li className="pb-10 ml-4 space-y-5 hover:text-green-500">
                   <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-lg font-normal leading-none text-gray-400 dark:text-gray-500">
-                    February 2022 - Present
+                  <time className="mb-1 text-lg font-normal leading-none text-gray-400 dark:text-gray-400">
+                    December 2021 - Present
                   </time>
                   <h3 className=" text-2xl font-semibold dark:text-white">
                     Technical Project Lead/Team Lead
                   </h3>
-                  <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
-                    Developers Studio
+                  <p className="mb-4 text-lg font-normal text-gray-400 hover:text-white">
+                    <Link href='https://developers.studio/' target='_blank'>Developers Studio</Link>
                   </p>
                 </li>
-                <li className="mb-10 ml-4">
+                <li className="mb-10 ml-4 space-y-5 hover:text-green-500">
                   <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                    March 2022
+                  <time className="mb-1 text-lg font-normal leading-none text-gray-400 dark:text-gray-400">
+                    December 2020 - December 2021
                   </time>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                    Marketing UI design in Figma
+                  <h3 className=" text-2xl font-semibold dark:text-white">
+                    Team Lead
                   </h3>
-                  <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                    All of the pages and components are first designed in Figma
-                    and we keep a parity between the two versions even as we
-                    update the project.
+                  <p className="mb-4 text-lg font-normal text-gray-400 hover:text-white">
+                  <Link href='https://www.techscale.io/' target='_blank'>Tech Scale</Link>
                   </p>
                 </li>
-                <li className="ml-4">
+                <li className="mb-10 ml-4 space-y-5 hover:text-green-500">
                   <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                    April 2022
+                  <time className="mb-1 text-lg font-normal leading-none text-gray-400 dark:text-gray-400">
+                    February 2020 - December 2020
                   </time>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                    E-Commerce UI code in Tailwind CSS
+                  <h3 className=" text-2xl font-semibold dark:text-white">
+                    Sr. Software Engineer
                   </h3>
-                  <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                    Get started with dozens of web components and interactive
-                    elements built on top of Tailwind CSS.
+                  <p className="mb-4 text-lg font-normal text-gray-400 hover:text-white">
+                  <Link href='https://bookme.pk/' target='_blank'>Bookme</Link>
+                  </p>
+                </li>
+                <li className="mb-10 ml-4 space-y-5 hover:text-green-500">
+                  <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                  <time className="mb-1 text-lg font-normal leading-none text-gray-400 dark:text-gray-400">
+                    April 2016 - February 2020
+                  </time>
+                  <h3 className=" text-2xl font-semibold dark:text-white">
+                    Software Engineer
+                  </h3>
+                  <p className="mb-4 text-lg font-normal text-gray-400 hover:text-white">
+                    <Link href='https://www.elementarylogics.com/' target='_blank'>Elementary Logics</Link>
                   </p>
                 </li>
               </ol>
@@ -179,7 +190,7 @@ export default function Profile() {
                   <h3 className=" text-2xl font-semibold dark:text-white">
                     Website Design
                   </h3>
-                  <p className="text-lg font-normal text-gray-500 dark:text-gray-400">
+                  <p className="text-lg font-normal text-gray-400 dark:text-gray-400">
                     I created digital products with unique ideas use Figma &
                     Framer
                   </p>
@@ -192,7 +203,7 @@ export default function Profile() {
                   <h3 className=" text-2xl font-semibold dark:text-white">
                     Website Design
                   </h3>
-                  <p className="text-lg font-normal text-gray-500 dark:text-gray-400">
+                  <p className="text-lg font-normal text-gray-400 dark:text-gray-400">
                     I created digital products with unique ideas use Figma &
                     Framer
                   </p>
@@ -205,7 +216,7 @@ export default function Profile() {
                   <h3 className=" text-2xl font-semibold dark:text-white">
                     Website Design
                   </h3>
-                  <p className="text-lg font-normal text-gray-500 dark:text-gray-400">
+                  <p className="text-lg font-normal text-gray-400 dark:text-gray-400">
                     I created digital products with unique ideas use Figma &
                     Framer
                   </p>
@@ -286,7 +297,7 @@ export default function Profile() {
                 >
                   <h3 className=" text-2xl font-semibold">CardEye</h3>
                   <Image
-                    src="/images/cardeye.png"
+                    src="/images/cardeye.PNG"
                     alt="cardeye"
                     width={500}
                     height={500}
@@ -337,7 +348,7 @@ export default function Profile() {
                       <h3 className=" text-2xl font-semibold dark:text-white">
                         Li Ji
                       </h3>
-                      <p className="text-lg font-normal text-gray-500 dark:text-gray-400">
+                      <p className="text-lg font-normal text-gray-400 dark:text-gray-400">
                         Project Manager{" "}
                         <span className="text-green-500">Adddemand</span>
                       </p>
