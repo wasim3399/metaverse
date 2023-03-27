@@ -186,42 +186,51 @@ proficient in working with <span className=" text-white font-semibold">SOAP and 
               </h2>
 
               <div className=" space-y-4">
-                <div className=" border border-gray-500 hover:border-green-500 rounded-3xl px-20 py-5 space-y-5">
+                <div className=" cursor-pointer border border-gray-500 hover:border-green-500 rounded-3xl px-20 py-5 space-y-5">
                   <h3 className=" text-2xl font-semibold dark:text-white">
-                    Website Design
+                    Fintech Application
                   </h3>
                   <p className="text-lg font-normal text-gray-400 dark:text-gray-400">
-                    I created digital products with unique ideas use Figma &
-                    Framer
+                    I have an extensive knowledge in building Fintech applications. I have created a custom payment gateway successfully running in Sweden from scratch.
                   </p>
-                  <p className="text-lg font-normal text-white dark:text-gray-400">
-                    24 Projeccts
+                  <p className="text-lg font-normal text-green-500 ">
+                  https://portal.cardeye.tech/
                   </p>
                 </div>
 
-                <div className=" border border-gray-500 hover:border-green-500 rounded-3xl px-20 py-5 space-y-5">
+                <div className=" cursor-pointer border border-gray-500 hover:border-green-500 rounded-3xl px-20 py-5 space-y-5">
                   <h3 className=" text-2xl font-semibold dark:text-white">
-                    Website Design
+                    Booking Applications
                   </h3>
                   <p className="text-lg font-normal text-gray-400 dark:text-gray-400">
-                    I created digital products with unique ideas use Figma &
-                    Framer
+                    I have a vast experience to work with booking systems. I have successfully integrated online booking of hotels for Pakistan's No.1 online booking system.
                   </p>
-                  <p className="text-lg font-normal text-white dark:text-gray-400">
-                    24 Projeccts
+                  <p className="text-lg font-normal text-green-500">
+                  https://bookme.pk/
                   </p>
                 </div>
 
-                <div className=" border border-gray-500 hover:border-green-500 rounded-3xl px-20 py-5 space-y-5">
+                <div className=" cursor-pointer border border-gray-500 hover:border-green-500 rounded-3xl px-20 py-5 space-y-5">
                   <h3 className=" text-2xl font-semibold dark:text-white">
-                    Website Design
+                    Invoicing System
                   </h3>
                   <p className="text-lg font-normal text-gray-400 dark:text-gray-400">
-                    I created digital products with unique ideas use Figma &
-                    Framer
+                  Invoicing system build for Denmark with e-conomic integration
                   </p>
-                  <p className="text-lg font-normal text-white dark:text-gray-400">
-                    24 Projeccts
+                  <p className="text-lg font-normal text-green-500">
+                  https://faktura.weiswiseapps.com/
+                  </p>
+                </div>
+
+                <div className=" cursor-pointer border border-gray-500 hover:border-green-500 rounded-3xl px-20 py-5 space-y-5">
+                  <h3 className=" text-2xl font-semibold dark:text-white">
+                    Ecommerce Applications
+                  </h3>
+                  <p className="text-lg font-normal text-gray-400 dark:text-gray-400">
+                  Experience to work with E-commerce web applications.
+                  </p>
+                  <p className="text-lg font-normal text-green-500">
+                  https://aqsinternationalstore.co.uk/
                   </p>
                 </div>
               </div>
@@ -229,7 +238,7 @@ proficient in working with <span className=" text-white font-semibold">SOAP and 
           </div>
 
           {/* skills */}
-          <div className=" flex pt-36">
+          {/* <div className=" flex pt-36">
             <div className="">
               <button className=" border border-gray-500 px-6 py-2 rounded-3xl">
                 MY SKILLS
@@ -241,10 +250,10 @@ proficient in working with <span className=" text-white font-semibold">SOAP and 
               <div className=" flex flex-wrap space-x-2">
                 <div className="border border-gray-500 rounded-full p-14">
                   <Image
-                    src="/images/figma.png"
+                    src="/images/cardeyeLogo.svg"
                     alt="figma"
                     width={50}
-                    height={50}
+                    height={150}
                   ></Image>
                   <p>92%</p>
                 </div>
@@ -277,10 +286,10 @@ proficient in working with <span className=" text-white font-semibold">SOAP and 
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* portfolio */}
-          <div className=" flex pt-36">
+          {/* <div className=" flex pt-36">
             <div className="">
               <button className=" border border-gray-500 px-6 py-2 rounded-3xl">
                 PORTFOLIO
@@ -311,7 +320,7 @@ proficient in working with <span className=" text-white font-semibold">SOAP and 
                 >
                   <h3 className=" text-2xl font-semibold">CardEye</h3>
                   <Image
-                    src="/images/cardeye.png"
+                    src="/images/cardeye.PNG"
                     alt="cardeye"
                     width={500}
                     height={500}
@@ -320,7 +329,7 @@ proficient in working with <span className=" text-white font-semibold">SOAP and 
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* testimonials */}
           {/* add slider */}
@@ -335,10 +344,13 @@ proficient in working with <span className=" text-white font-semibold">SOAP and 
               </h2>
 
               <div className=" space-y-4">
+              
+
+              <div className=" space-y-4">
                 <div className=" border border-gray-500 hover:border-green-500 rounded-3xl px-20 py-5 space-y-5">
                   <div className=" flex space-x-5">
                     <Image
-                      src="/images/client1.jpg"
+                      src="/images/profile.jpg"
                       width={50}
                       height={50}
                       alt="client1"
@@ -346,20 +358,68 @@ proficient in working with <span className=" text-white font-semibold">SOAP and 
                     ></Image>
                     <div>
                       <h3 className=" text-2xl font-semibold dark:text-white">
-                        Li Ji
+                        Moshari
                       </h3>
                       <p className="text-lg font-normal text-gray-400 dark:text-gray-400">
-                        Project Manager{" "}
-                        <span className="text-green-500">Adddemand</span>
+                        Project Owner{" "}
+                        <span className="text-green-500">Saudi Arabia</span>
                       </p>
                     </div>
                   </div>
                   <p className="text-lg font-normal text-white">
-                    “Drake - A Developer with the creativity, professional and
-                    master of code. Much more than what i'm expect. High quality
-                    product & flexiable price. Recommended!.”
+                  "He is very great developer, he provided a very good support and high quality of work. I highly recommend him he is cooperative and he quickly learned about the project and the scope of work and delivered all on time."
                   </p>
                 </div>
+              </div>
+
+              <div className=" space-y-4">
+                <div className=" border border-gray-500 hover:border-green-500 rounded-3xl px-20 py-5 space-y-5">
+                  <div className=" flex space-x-5">
+                    <Image
+                      src="/images/profile.jpg"
+                      width={50}
+                      height={50}
+                      alt="client1"
+                      className=" rounded-full"
+                    ></Image>
+                    <div>
+                      <h3 className=" text-2xl font-semibold dark:text-white">
+                        Oni Ade
+                      </h3>
+                      <p className="text-lg font-normal text-gray-400 dark:text-gray-400">
+                        Project Owner{" "}
+                        <span className="text-green-500">Nigeria</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text-lg font-normal text-white">
+                  "Excellent developer with professional commitment to project success. Happy working with him."</p>
+                </div>
+              </div>
+
+              <div className=" space-y-4">
+                <div className=" border border-gray-500 hover:border-green-500 rounded-3xl px-20 py-5 space-y-5">
+                  <div className=" flex space-x-5">
+                    <Image
+                      src="/images/profile.jpg"
+                      width={50}
+                      height={50}
+                      alt="client1"
+                      className=" rounded-full"
+                    ></Image>
+                    <div>
+                      <h3 className=" text-2xl font-semibold dark:text-white">
+                      Timothy Tu
+                      </h3>
+                      <p className="text-lg font-normal text-gray-400 dark:text-gray-400">
+                        Project Owner{" "}
+                        <span className="text-green-500">United States</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text-lg font-normal text-white">
+                  "He has a great attitude. He is responsive. I would use his service again."</p></div>
+              </div>
               </div>
             </div>
           </div>
@@ -376,10 +436,10 @@ proficient in working with <span className=" text-white font-semibold">SOAP and 
               <h3 className=" text-2xl font-semibold dark:text-white">
                 Contact Me
               </h3>
-              <ul className=" pt-10 text-gray-600">
+              <ul className=" pt-10 text-gray-400">
                 <div className=" flex items-center hover:text-green-500">
                   <AiOutlinePhone></AiOutlinePhone>
-                  <li>+92 123 4567890</li>
+                  <li>+92 321 4746939</li>
                 </div>
                 <div className=" flex items-center hover:text-green-500">
                   <AiOutlineMail></AiOutlineMail>
