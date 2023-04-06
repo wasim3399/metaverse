@@ -1,0 +1,28 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: yarn install
+
+    - name: Build Next.js application
+      run: yarn build
+
+    - name: Test Next.js application
+      run: yarn test
+
+    - name: Deploy to Vercel
+      run: yarn vercel --prod https://metaverse-tailwind.vercel.app/
+      env:
+        VERCEL_TOKEN: bSRIz3djOUq1kUwrp1N7k9rW
