@@ -15,7 +15,7 @@ export default function Header() {
       </div>
       <div className=" md:flex items-center space-x-12 text-lg font-semibold hidden">
         <Link href={"/"} className="hover:text-blue-600">Home</Link>
-        <Link href={"profile"} className="hover:text-blue-600">Profile</Link>
+        <Link href={"/"} className="hover:text-blue-600">Services</Link>
         <Link href={"/"} className="hover:text-blue-600">About</Link>
         <Link href={"/"} className="hover:text-blue-600">Contact</Link>
         <div>
